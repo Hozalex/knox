@@ -12,9 +12,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pinterest/knox"
-	"github.com/pinterest/knox/server/auth"
-	"github.com/pinterest/knox/server/keydb"
+	"github.com/hozalex/knox"
+	"github.com/hozalex/knox/server/auth"
+	"github.com/hozalex/knox/server/keydb"
 )
 
 const TESTVAL int = 1

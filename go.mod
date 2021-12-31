@@ -1,4 +1,4 @@
-module github.com/pinterest/knox
+module github.com/hozalex/knox
 
 go 1.14
 

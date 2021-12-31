@@ -16,11 +16,11 @@ import (
 	"os"
 	"time"
 
-	"github.com/pinterest/knox"
-	"github.com/pinterest/knox/log"
-	"github.com/pinterest/knox/server"
-	"github.com/pinterest/knox/server/auth"
-	"github.com/pinterest/knox/server/keydb"
+	"github.com/hozalex/knox"
+	"github.com/hozalex/knox/log"
+	"github.com/hozalex/knox/server"
+	"github.com/hozalex/knox/server/auth"
+	"github.com/hozalex/knox/server/keydb"
 )
 
 const caCert = `-----BEGIN CERTIFICATE-----

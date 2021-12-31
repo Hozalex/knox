@@ -3,7 +3,7 @@ package client
 import (
 	"fmt"
 
-	"github.com/pinterest/knox"
+	"github.com/hozalex/knox"
 )
 
 var cmdDeactivate = &Command{

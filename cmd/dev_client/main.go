@@ -12,8 +12,8 @@ import (
 	"os/user"
 	"time"
 
-	"github.com/pinterest/knox"
-	"github.com/pinterest/knox/client"
+	"github.com/hozalex/knox"
+	"github.com/hozalex/knox/client"
 )
 
 // certPEMBlock is the certificate signed by the CA to identify the machine using the client

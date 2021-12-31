@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/pinterest/knox"
+	"github.com/hozalex/knox"
 )
 
 func init() {

@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/pinterest/knox"
+	"github.com/hozalex/knox"
 )
 
 var testSecret = []byte("testtesttesttest")

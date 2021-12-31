@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pinterest/knox"
+	"github.com/hozalex/knox"
 )
 
 // Provider is used for authenticating requests via the authentication decorator.

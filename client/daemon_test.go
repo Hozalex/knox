@@ -16,7 +16,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pinterest/knox"
+	"github.com/hozalex/knox"
 )
 
 var registeredFile = ".registered"

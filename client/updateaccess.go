@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/pinterest/knox"
+	"github.com/hozalex/knox"
 )
 
 func init() {

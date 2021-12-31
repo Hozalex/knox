@@ -16,7 +16,7 @@ import (
 
 	"gopkg.in/fsnotify.v1"
 
-	"github.com/pinterest/knox"
+	"github.com/hozalex/knox"
 )
 
 var cmdDaemon = &Command{

@@ -5,9 +5,9 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/pinterest/knox"
-	"github.com/pinterest/knox/server/auth"
-	"github.com/pinterest/knox/server/keydb"
+	"github.com/hozalex/knox"
+	"github.com/hozalex/knox/server/auth"
+	"github.com/hozalex/knox/server/keydb"
 )
 
 func GetMocks() (KeyManager, knox.Principal, knox.ACL) {

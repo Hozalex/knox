@@ -16,11 +16,11 @@ import (
 	"time"
 
 	"github.com/gorilla/mux"
-	"github.com/pinterest/knox"
-	"github.com/pinterest/knox/server/auth"
-	"github.com/pinterest/knox/server/keydb"
+	"github.com/hozalex/knox"
+	"github.com/hozalex/knox/server/auth"
+	"github.com/hozalex/knox/server/keydb"
 
-	. "github.com/pinterest/knox/server"
+	. "github.com/hozalex/knox/server"
 )
 
 var router *mux.Router
