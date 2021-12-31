@@ -7,6 +7,7 @@ import (
 	"crypto/tls"
 	"crypto/x509"
 	"crypto/x509/pkix"
+	"database/sql"
 	"encoding/pem"
 	"expvar"
 	"flag"
@@ -21,6 +22,7 @@ import (
 	"github.com/hozalex/knox/server"
 	"github.com/hozalex/knox/server/auth"
 	"github.com/hozalex/knox/server/keydb"
+	_ "github.com/lib/pq"
 )
 
 const caCert = `-----BEGIN CERTIFICATE-----
@@ -62,7 +64,12 @@ func main() {
 		errLogger.Fatal("Failed to make TLS key or cert: ", err)
 	}
 
-	db := keydb.NewTempDB()
+	d, err := sql.Open("postgres", "user=dobi dbname=knox")
+	if err != nil {
+		panic(err)
+	}
+	db, err := keydb.NewSQLDB(d)
+	// db := keydb.NewTempDB()
 
 	server.AddDefaultAccess(&knox.Access{
 		Type:       knox.UserGroup,
