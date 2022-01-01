@@ -7,7 +7,6 @@ import (
 	"crypto/tls"
 	"crypto/x509"
 	"crypto/x509/pkix"
-	"database/sql"
 	"encoding/pem"
 	"expvar"
 	"flag"
@@ -64,12 +63,12 @@ func main() {
 		errLogger.Fatal("Failed to make TLS key or cert: ", err)
 	}
 
-	d, err := sql.Open("postgres", "user=dobi dbname=knox")
-	if err != nil {
-		panic(err)
-	}
-	db, err := keydb.NewPostgreSQLDB(d)
-	// db := keydb.NewTempDB()
+	// d, err := sql.Open("postgres", "user=dobi dbname=knox")
+	// if err != nil {
+	// 	panic(err)
+	// }
+	// db, err := keydb.NewPostgreSQLDB(d)
+	db := keydb.NewTempDB()
 
 	server.AddDefaultAccess(&knox.Access{
 		Type:       knox.UserGroup,
