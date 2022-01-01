@@ -64,7 +64,7 @@ func main() {
 		errLogger.Fatal("Failed to make TLS key or cert: ", err)
 	}
 
-	d, err := sql.Open("postgres", "postgres://dobi:pdobid@localhost:5432/knox")
+	d, err := sql.Open("postgres", "dobi:pdobid@localhost:5432/knox")
 	if err != nil {
 		panic(err)
 	}
